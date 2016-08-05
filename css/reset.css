@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+/* ----------------------------------------------------------
+ html5 elements
+---------------------------------------------------------- */
+article, aside, figure, figcaption, footer, header, nav, section
+{ display: block;}
+/* ----------------------------------------------------------
+ reseting
+---------------------------------------------------------- */
+html { font-size: 62.5%;}
+body {
+  line-height: 1.6;
+  color: dimgray;
+}
+body, input, textarea, select, button {
+  font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+}
+body, div, pre, p, blockquote, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, th, td, button, figure, figcaption
+{ margin: 0; padding: 0;}
+input, textarea
+{ margin: 0; font-size: 100%;}
+input, textarea, select
+{ /*-webkit-appearance: none;*/}
+textarea
+{ resize: none;}
+button
+{ border: none; overflow: visible; background: none; vertical-align: top;  font-size: 100%; color: inherit; cursor: pointer; appearance: none;}
+label
+{ cursor: pointer;}
+table
+{ border-collapse: collapse; border-spacing: 0; font-size: 100%;}
+fieldset, img
+{ border: 0;}
+img
+{ height: auto; vertical-align: top;}
+address, caption, code, em, th
+{ font-style: normal; font-weight: normal;}
+ol, ul
+{ list-style: none;}
+caption, th
+{ text-align: left;}
+h1, h2, h3, h4, h5, h6, strong, em
+{ font-size: 100%; font-weight: normal;}
+sup, sub
+{ font-size: 63%;}
+sup
+{ vertical-align: top;}
+sub
+{ vertical-align: baseline;}
+*
+{ box-sizing: border-box;}
+/* ----------------------------------------------------------
+ base Link
+---------------------------------------------------------- */
+a {
+  color: #666;
+  text-decoration: none;
+}
+a:visited {}
+a:hover,
+a:active,
+a:focus { text-decoration: underline;}
+/* ----------------------------------------------------------
+ clearfix
+---------------------------------------------------------- */
+.header-in:before, .header-in:after,
+.clearfix:before, .clearfix:after,
+.contents:before, .contents:after
+{
+  content: "";
+  display: table;
+}
+.header-in:after,
+.clearfix:after,
+.contents:after
+{
+  clear: both;
+}

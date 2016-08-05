@@ -1,0 +1,230 @@
+/* ----------------------------------------------------------
+ layout
+---------------------------------------------------------- */
+.header {
+  padding: 10px 20px;
+  text-align: right;
+  background-color: steelblue;
+  color: #fff;
+}
+
+.header .header-ico {
+  display: inline-block;
+  width: 65px;
+}
+
+.header .header-ico img {
+  width: 100%;
+  height: auto;
+}
+
+.contents {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px 80px;
+  font-size: 1.6rem;
+}
+
+.footer {
+  padding: 10px 20px;
+  text-align: center;
+  background-color: steelblue;
+}
+
+.footer .footer-copyright {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+/* ----------------------------------------------------------
+ common
+---------------------------------------------------------- */
+.ttl-cmn-01 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4.8rem;
+  margin-bottom: 30px;
+  text-align: center;
+  color: steelblue;
+}
+
+.ttl-cmn-02 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  padding-top: 25px;
+  border-top: 2px solid steelblue;
+}
+
+.txt-cmn-01 {
+  font-size: 1.6rem;
+}
+
+.btn-cmn-01 {
+  margin: 50px 0;
+  text-align: center;
+}
+
+/* ----------------------------------------------------------
+ box
+---------------------------------------------------------- */
+/*box-border
+---------------------------------------------------------- */
+.box-border {
+  height: 4.8em;
+  line-height: 4.8em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.box-border p {
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/*box-flex
+---------------------------------------------------------- */
+.box-flex {
+  margin: 30px auto 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box-flex .box-flex-in {
+  padding: 20px;
+  align-self: center;
+  background-color: powderblue;
+  border-radius: 10px;
+}
+
+.box-flex .box-flex-in:first-child {
+  flex-shrink: 0;
+}
+
+.box-flex .box-flex-in:nth-child(even) {
+  padding: 0 10px;
+  background-color: #fff;
+}
+
+.box-flex label {
+  display: table;
+}
+
+.box-flex label span {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 2.2rem;
+}
+
+/*box-flex-usage
+---------------------------------------------------------- */
+.box-flex-usage {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box-flex-usage .box-flex-usage-in {
+  align-self: flex-start;
+  width: 100%;
+}
+
+.box-flex-usage .box-flex-usage-in:first-child {
+  border-left: 1px solid darkgray;
+}
+
+/* ----------------------------------------------------------
+ form
+---------------------------------------------------------- */
+select {
+  height: 2.4em;
+  background-color: #fff;
+  font-size: 1.6rem;
+}
+
+input[type="text"],
+input[type="button"] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="text"].s-large {
+  max-width: 160px;
+}
+
+input[type="text"].s-small {
+  max-width: 80px;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.form-checkbox span {
+  font-size: 2.4rem;
+}
+
+.form-checkbox span.disabled + span {
+  color: darkgray;
+}
+
+.form-select {
+  display: block;
+}
+
+.form-select + .form-select {
+  margin-top: 20px;
+}
+
+.form-select option[title] {
+  background-color: black;
+  color: white;
+}
+
+.form-button {
+  display: inline-block;
+  width: 30%;
+  background-color: steelblue;
+  font-size: 2.0rem;
+  line-height: 2.0em;
+  color: #fff;
+  cursor: pointer;
+}
+
+.form-button.disabled {
+  color: darkgray;
+  background-color: #fff;
+}
+
+/* ----------------------------------------------------------
+ table
+---------------------------------------------------------- */
+.table-usage {
+  width: 100%;
+}
+
+.table-usage th, .table-usage td {
+  padding: 5px 10px;
+  border-top: 1px solid darkgray;
+  border-right: 1px solid darkgray;
+  border-bottom: 1px solid darkgray;
+}
+
+.table-usage th {
+  background-color: powderblue;
+}
+
+.table-usage tr td:first-child {
+  background-color: #eee;
+}
+
+/* ----------------------------------------------------------
+ text
+---------------------------------------------------------- */
+.txt-error {
+  margin: 10px 0 0;
+  height: 2.4em;
+  font-size: 1.6rem;
+  color: crimson;
+  text-align: center;
+}
